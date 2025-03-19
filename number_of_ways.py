@@ -16,7 +16,7 @@ def numberOfWays(startPos: int, endPos: int, k: int) -> int:
     perform exactly k steps.
     """
     # start with path of length 1
-    paths = [startPos]
+    paths = [[startPos]]
 
     # loop k times
     for i in tqdm(range(k)):
@@ -50,7 +50,7 @@ def test_number_of_ways():
 
     Input: startPos = 1, endPos = 2, k = 3
     Output: 3
-    Explanation: We can reach position 2 from 1 in exactly 3 
+    Explanation: We can reach position 2 from 1 in exactly 3 steps
     in three ways:
     - 1 -> 2 -> 3 -> 2.
     - 1 -> 2 -> 1 -> 2.
